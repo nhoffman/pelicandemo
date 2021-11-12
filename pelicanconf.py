@@ -8,7 +8,7 @@ config = DEFAULT_CONFIG.copy()
 
 AUTHOR = 'AUTHOR'
 SITENAME = 'SITENAME'
-SITEURL = ''
+SITEURL = 'https://nhoffman.github.io/pelicandemo'
 
 PATH = 'content'
 
