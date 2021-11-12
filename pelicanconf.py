@@ -1,5 +1,13 @@
-AUTHOR = 'Association for Pathology Informatics'
-SITENAME = 'API Interoperability Resources'
+import glob
+from pathlib import Path
+
+from pelican.settings import DEFAULT_CONFIG
+from pelican.readers import MarkdownReader
+
+config = DEFAULT_CONFIG.copy()
+
+AUTHOR = 'AUTHOR'
+SITENAME = 'SITENAME'
 SITEURL = ''
 
 PATH = 'content'
@@ -28,4 +36,13 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
+
+THEME = "./elegant"
+THEME_TEMPLATES_OVERRIDES = ['templates']
+
+IGNORE_FILES = ['.#*', 'includes']
+INCLUDES = {}
+for fname in glob.glob('./content/includes/*.md'):
+    pth = Path(fname)
+    INCLUDES[pth.stem], _ = MarkdownReader(config).read(fname)
