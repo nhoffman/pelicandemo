@@ -1,4 +1,4 @@
-Title: Example Post
+Title: Another Post
 Date: 2021-11-12 12:12
 Category: blogpost
 Tags: bar, baz
