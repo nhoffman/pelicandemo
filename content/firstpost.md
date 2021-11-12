@@ -1,6 +1,6 @@
 Title: Example Post
 Date: 2021-11-11 11:11
 Category: article
-Tags: example, article
+Tags: foo, bar
 
-Following is a review of my favorite mechanical keyboard.
+Here is an example post
