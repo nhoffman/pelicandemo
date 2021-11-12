@@ -40,6 +40,7 @@ DEFAULT_PAGINATION = 10
 
 THEME = "./elegant"
 THEME_TEMPLATES_OVERRIDES = ['templates']
+DIRECT_TEMPLATES = (('tags', 'categories','archives', 'search', '404'))
 
 IGNORE_FILES = ['.#*', 'includes']
 INCLUDES = {}
