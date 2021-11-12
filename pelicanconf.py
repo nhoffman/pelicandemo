@@ -39,7 +39,7 @@ DEFAULT_PAGINATION = 10
 # RELATIVE_URLS = True
 
 THEME = "./elegant"
-THEME_TEMPLATES_OVERRIDES = ['templates']
+THEME_TEMPLATES_OVERRIDES = ['./content/templates']
 DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))
 
 IGNORE_FILES = ['.#*', 'includes']
